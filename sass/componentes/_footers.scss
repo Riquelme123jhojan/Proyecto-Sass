@@ -1,0 +1,92 @@
+.finpage{
+    background-color:$color-variacion;
+    margin-top: 3px;
+    border-top:solid 5px $color-oscuro;
+    height:350px;
+    display:block;
+    overflow:hidden;
+    display: flex;
+    justify-content:space-around;
+    &__description{
+        height: 310px;
+        width: 30%;
+        margin:10px 0px 0px 10px; 
+        .description1{
+            @include caja1;
+            .content_description1{
+                @include titulos($Fuente1);
+                color:$color-claro;
+            }
+            
+        }    
+
+    }
+    &__redsocial{
+        height: 310px;
+        width: 30%;
+        margin-top:10px;
+        border-right:solid 3px $color-claro;
+        border-left:solid 3px $color-claro;
+        .RedesSociales1{  
+           @include caja1;
+            h2{
+                color:$color-claro;
+                @include titulos($Fuente1);
+ 
+             }
+             img{
+                width: 40px;
+                object-fit:cover;
+                margin-top: 20px;
+            }
+            label{
+                margin-left: 20px;
+                color:$color-claro;
+                @include titulos($Fuente1);
+           }
+          
+        }    
+    }
+    &__info{
+        height: 310px;
+        width: 30%;
+        margin: 10px 10px 0 0;
+        .info1{
+            width: 90%;
+            height: 300px;
+            margin: 20px 0px 0px 20px;
+            padding-left: 40px;
+            h2{
+                color:$color-claro;
+            }
+            label{
+                margin-left: 20px;
+                color:$color-claro;
+
+            }
+            img{
+                margin-top: 20px;
+            }
+
+        }
+    }
+}
+.end{
+   background-color: $color-oscuro;
+   width: auto;
+   overflow: hidden;
+   padding:20px;
+
+   h3{
+       text-align: center;
+       color:$color-claro;
+       font-size: 15px;
+       @include titulos($Fuente1);
+
+       a{
+           color:$color-claro;
+           font-weight: bold;
+       }
+   }
+
+}
